@@ -1,18 +1,23 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
+import React from "react";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import Features from "./Components/Features";
 
 function App() {
   return (
-    <div >
-       <Navbar/>
-       <main>
-        <div>
-          <Home/>
+    <div>
+      <Navbar />
+
+      <main style={{ minHeight: '100vh' }}>
+        <div id="home">
+          <Home />
         </div>
-       </main>
+        <div id="features">
+          <Features />
+        </div>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
