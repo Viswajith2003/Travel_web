@@ -58,7 +58,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="contact"
+            to="contacts"
             spy={true}
             smooth={true}
             duration={500}
