@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Features from "./Components/Features";
+import Destination from "./Components/Destination";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </div>
         <div id="features">
           <Features />
+        </div>
+        <div id="destination">
+          <Destination />
         </div>
       </main>
     </div>

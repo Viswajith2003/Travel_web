@@ -22,7 +22,7 @@ function Features() {
         </div>
         <div className="w-full lg:w-3/5 mt-10 lg:ml-14">
           <img
-            className=" rounded-xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
+            className="rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
             src={img}
             alt="image"
           />
