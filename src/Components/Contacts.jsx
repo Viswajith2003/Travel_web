@@ -1,72 +1,60 @@
 import React from "react";
+import img from "../assets/contact.jpg";
 
 function Contacts() {
   return (
-    <div>
-      <section className="bg-white dark:bg-gray-900 items-center justify-center">
-        <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Contact Us
-          </h2>
-          <p className="mb-8 lg:mb-16 font-light text-justify text-gray-500 dark:text-gray-400 sm:text-xl">
+    <div className=" min-h-screen flex flex-col items-center justify-center md:mx-32 mx-5 mt-10">
+      <div className=" flex flex-col lg:flex-row justify-between w-full">
+        <form className=" w-full lg:w-2/5 space-y-8 bg-[#95b6d9]  p-5 rounded-xl">
+          <h1 className="text-4xl font-bold text-center">Contact Form</h1>
+          <div className=" flex flex-col">
+            <label htmlFor="userName">Full Name</label>
+            <input
+              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div className=" flex flex-col">
+            <label htmlFor="userEmail">Email</label>
+            <input
+              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div className=" flex flex-col">
+            <label htmlFor="userMessage">Message</label>
+            <textarea
+              className=" py-3 px-2 rounded-lg hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-all"
+              name="userMessage"
+              id="userMessage"
+              cols="30"
+              rows="8"
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+
+          <div className="flex flex-row justify-center">
+            <button className="bg-yellow-300 hover:bg-cyan-300 text-black w-48 h-14 text-xl rounded-full font-semibold">
+              Submit
+            </button>
+          </div>
+        </form>
+        <div className=" flex flex-col items-center w-full lg:w-2/4 my-5">
+          <img className=" rounded-lg" src={img} alt="" />
+          <p className=" text-center text-sm pt-4 text-[#898888]">
             We'd love to hear from you! Whether you have questions, feedback, or
             need assistance with your travel plans, please don't hesitate to
-            reach out.
+            reach out. Our team is here to assist you every step of the way.
+            Simply fill out the form below, and we'll be in touch shortly.
           </p>
-          <form action="#" className="space-y-8">
-            <div>
-              <label
-                for="subject"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="valid name"
-                required
-              />
-            </div>
-            <div>
-              <label
-                for="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Your email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="name@flowbite.com"
-                required
-              />
-            </div>
-
-            <div className="sm:col-span-2">
-              <label
-                for="message"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="6"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Leave a comment..."
-              ></textarea>
-            </div>
-            <div className="flex justify-center">
-              <button className="bg-cyan-200 hover:bg-cyan-300 text-black w-44 h-12 text-xl rounded-full font-semibold">
-                Submit
-              </button>
-            </div>
-          </form>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
