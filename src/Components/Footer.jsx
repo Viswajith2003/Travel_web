@@ -1,11 +1,13 @@
 import React from "react";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 function Footer() {
   return (
-    <div className="mb-14 mt-8 flex justify-between md:px-32 px-5 gap-10">
+    <div className="mt-1 pt-6 pb-6  flex justify-between md:px-32 px-5 gap-10 bg-darkBackground text-white">
       <div className="space-y-5">
         <h1 className="text-3xl font-bold">TripMood</h1>
-        <p className="font-semibold text-gray-600">
+        <p className="font-semibold ">
           With TripMood you can experience <br /> new travel and the best
           tourist <br />
           destination that we have to offer
@@ -13,22 +15,48 @@ function Footer() {
       </div>
       <div className="space-y-4">
         <h1 className="text-2xl font-bold">Destination</h1>
-        <h3 className="font-semibold text-gray-600">Paris,France</h3>
-        <h3 className="font-semibold text-gray-600">Dubai,UAE</h3>
-        <h3 className="font-semibold text-gray-600">Venice, Italy</h3>
-        <h3 className="font-semibold text-gray-600">Lakshadweep</h3>
+        <nav className=" flex flex-col gap-2">
+          <a className=" hover:text-cyan-500  transition-all cursor-pointer">
+            Paris,France
+          </a>
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Dubai,UAE
+          </a>
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Venice, Italy
+          </a>
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Lakshadweep
+          </a>
+        </nav>
       </div>
       <div className="space-y-4">
         <h1 className="text-2xl font-bold">About</h1>
-        <h3 className="font-semibold text-gray-600">Contact us</h3>
-        <h3 className="font-semibold text-gray-600">Testimonial</h3>
-        <h3 className="font-semibold text-gray-600">Rating</h3>
+        <nav className=" flex flex-col gap-2">
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Contact us
+          </a>
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Testimonial
+          </a>
+          <a className="hover:text-cyan-500 transition-all cursor-pointer">
+            Rating
+          </a>
+        </nav>
       </div>
-      <div className="space-y-4">
+      <div className="flex flex-col items-center space-y-4">
         <h1 className="text-2xl font-bold">Follow Us</h1>
-        <p className="font-semibold text-gray-600">facebook</p>
-        <p className="font-semibold text-gray-600">Youtube</p>
-        <p className="font-semibold text-gray-600">instagram</p>
+        <nav className=" flex flex-col gap-2">
+          <a className="font-bold">
+            <FaFacebook className="w-5 h-5" />
+          </a>
+          <a className="font-bold">
+            <FaYoutube className="w-5 h-5" />
+          </a>
+          <a className="font-bold">
+            <AiFillInstagram className="w-5 h-5" />
+          </a>
+        </nav>
       </div>
     </div>
   );

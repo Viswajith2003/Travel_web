@@ -59,9 +59,11 @@ function Contacts() {
                 placeholder="Leave a comment..."
               ></textarea>
             </div>
-            <button className="bg-cyan-200 hover:bg-cyan-300 text-black w-44 h-12 text-xl rounded-full font-semibold">
-              Submit
-            </button>
+            <div className="flex justify-center">
+              <button className="bg-cyan-200 hover:bg-cyan-300 text-black w-44 h-12 text-xl rounded-full font-semibold">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </section>
