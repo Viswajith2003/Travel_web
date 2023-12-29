@@ -1,52 +1,70 @@
 import React from "react";
-import img from "../assets/features.jpg";
+import Paris from "../assets/paris.jpg";
+import Dubai from "../assets/dubai.jpg";
+import Italy from "../assets/italy.jpg";
+import Dweep from "../assets/dweep.jpg";
 
 function Destination() {
   return (
-    <div className="text-center">
+    <div className="min-h-screen text-center flex flex-col justify-center md:mx-32 mx-5">
       <h1 className="text-5xl font-bold">Most Popular Destinations</h1>
       {/* cards */}
-      <div className="mt-12 flex justify-center space-x-12">
-        <div class="max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-          <img class="w-full" src={img} alt="beach" />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Paris, France</div>
-            <p class="text-gray-700 text-left">
+      <div className="mt-24 flex justify-center space-x-6">
+        <div className="bg-slate-100 max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] ">
+          <img className="w-full" src={Paris} alt="beach" />
+          <div className="px-6 py-4 ">
+            <div className="font-bold text-xl mb-2">Paris, France</div>
+            <p className="text-gray-700 text-left">
               Paris offers iconic landmarks like the Eiffel Tower and
-              world-class art at the Louvre Museum.
+              world-className art at the Louvre Museum.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
+          <div className="px-6 pt-4 pb-2 mb-3">
             <button className="bg-yellow-300 hover:bg-cyan-300 w-44 h-12 text-xl rounded-full font-semibold">
               Book Tickets
             </button>
           </div>
         </div>
-        <div class="max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-          <img class="w-full" src={img} alt="beach" />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Dubai, UAE</div>
-            <p class="text-gray-700 text-left">
+        <div className="bg-slate-100 max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+          <img className="w-full" src={Dubai} alt="beach" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Dubai, UAE</div>
+            <p className="text-gray-700 text-left">
               A city of superlatives, Dubai boasts towering skyscrapers, luxury
               shopping, and desert adventures
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
+          <div className="px-6 pt-4 pb-2 mb-3">
             <button className="bg-yellow-300 hover:bg-cyan-300 w-44 h-12 text-xl rounded-full font-semibold">
               Book Tickets
             </button>
           </div>
         </div>
-        <div class="max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
-          <img class="w-full" src={img} alt="beach" />
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">Venice, Italy</div>
-            <p class="text-gray-700 text-left">
+        <div className="bg-slate-100 max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+          <img className="w-full" src={Italy} alt="beach" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Venice, Italy</div>
+            <p className="text-gray-700 text-left">
               Explore the romantic canals and historic architecture of Venice, a
               city built on water.
             </p>
           </div>
-          <div class="px-6 pt-4 pb-2">
+          <div className="px-6 pt-4 pb-2 mb-3">
+            <button className="bg-yellow-300 hover:bg-cyan-300 w-44 h-12 text-xl rounded-full font-semibold">
+              Book Tickets
+            </button>
+          </div>
+        </div>
+        <div className="bg-slate-100 max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]">
+          <img className="w-full" src={Dweep} alt="beach" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">Lakshadweep</div>
+            <p className="text-gray-700 text-left">
+              Explore the romantic canals and historic architecture of Venice, a
+              city built on water.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2 mb-3">
             <button className="bg-yellow-300 hover:bg-cyan-300 w-44 h-12 text-xl rounded-full font-semibold">
               Book Tickets
             </button>
