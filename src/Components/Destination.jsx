@@ -6,10 +6,10 @@ import Dweep from "../assets/dweep.jpg";
 
 function Destination() {
   return (
-    <div className="min-h-screen text-center flex flex-col justify-center md:mx-32 mx-5">
-      <h1 className="text-5xl font-bold">Most Popular Destinations</h1>
+    <div className="min-h-screen text-center flex flex-col justify-center lg:mx-5 ml-14">
+      <h1 className="text-5xl font-bold mr-9">Most Popular Destinations</h1>
       {/* cards */}
-      <div className="mt-24 flex justify-center space-x-6">
+      <div className="my-8 gap-8 md:mt-24 flex flex-col lg:flex-row justify-center">
         <div className="bg-slate-100 max-w-sm  overflow-hidden  rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] ">
           <img className="w-full" src={Paris} alt="beach" />
           <div className="px-6 py-4 ">

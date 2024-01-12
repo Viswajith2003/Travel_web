@@ -45,9 +45,9 @@ function Contacts() {
             </button>
           </div>
         </form>
-        <div className=" flex flex-col items-center w-full lg:w-2/4 my-5">
+        <div className=" flex flex-col items-center w-full lg:w-2/4 my-8">
           <img className=" rounded-lg" src={img} alt="" />
-          <p className=" text-center text-sm pt-4 text-[#898888]">
+          <p className=" text-center text-sm pt-4 md:text-[#898888]">
             We'd love to hear from you! Whether you have questions, feedback, or
             need assistance with your travel plans, please don't hesitate to
             reach out. Our team is here to assist you every step of the way.

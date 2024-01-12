@@ -3,13 +3,13 @@ import img from "../assets/about.jpg";
 
 function About() {
   return (
-    <div className="mt-24 min-h-screen flex flex-col justify-center lg:flex-row items-center md:px-32 px-5 gap-10">
-      <div className="w-1/2 space-y-9 mt-8 text-left">
-        <h1 className="text-7xl font-bold ">
+    <div className="mt-24 min-h-screen flex flex-col lg:flex-row items-center lg:px-32 gap-10">
+      <div className="m-3 md:w-1/2 space-y-9 mt-8 text-center lg:text-left">
+        <h1 className="text-5xl lg:text-7xl font-bold ">
           At TripMood, we are ready to provide you with the best trip of your
           life!
         </h1>   
-        <p className="text-2xl">
+        <p className="text-xl lg:text-2xl">
           Your dream vacation awaits, and we're here to make it a reality.
         </p>
         <div>
@@ -18,7 +18,7 @@ function About() {
           </button>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="w-3/4 md:w-1/2">
         <img
           src={img}
           alt="picture"
