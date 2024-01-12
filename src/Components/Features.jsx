@@ -6,8 +6,8 @@ import { SiCashapp } from "react-icons/si";
 
 function Features() {
   return (
-    <div className="flex items-center min-h-screen">
-      <div className="w-full p-5 ml-24">
+    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen">
+      <div className="w-full lg:p-5 ml-24">
         <div className="space-y-6">
           <h1 className="text-5xl font-bold  mb-5">
             Get Ready to Explore, Get <br />
