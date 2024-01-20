@@ -7,13 +7,12 @@ import About from "./Components/About";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
 
-
 function App() {
   return (
     <div>
       <Navbar />
 
-      <main style={{ minHeight: '100vh' }}>
+      <main style={{ minHeight: "100vh" }}>
         <div id="home">
           <Home />
         </div>

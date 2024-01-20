@@ -6,10 +6,10 @@ import { SiCashapp } from "react-icons/si";
 
 function Features() {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center min-h-screen">
-      <div className="w-full lg:p-5 ml-24">
-        <div className="space-y-6">
-          <h1 className="text-5xl font-bold  mb-5">
+    <div className="flex flex-col md:flex-row text-center justify-center items-center min-h-screen md:mx-32 mx-5 gap-14 mt-14">
+      <div className="w-full">
+        <div className="space-y-6 lg:text-left">
+          <h1 className="text-5xl font-bold mb-5">
             Get Ready to Explore, Get <br />
             Ready to Experience!
           </h1>
@@ -20,6 +20,7 @@ function Features() {
             experience.
           </p>
         </div>
+
         <div className="w-full lg:w-3/5 mt-10 lg:ml-14">
           <img
             className="rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
@@ -74,12 +75,6 @@ function Features() {
 }
 
 export default Features;
-
-
-
-
-
-
 
 // import React from "react";
 // import img from "../assets/features.jpg";
