@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Features from "./Components/Features";
@@ -8,9 +8,11 @@ import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
 
 function App() {
+  const [nav,setNav] =useState(false);
   return (
     <div>
-      <Navbar />
+      
+      <Navbar/>
 
       <main style={{ minHeight: "100vh" }}>
         <div id="home">

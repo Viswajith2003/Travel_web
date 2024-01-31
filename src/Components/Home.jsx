@@ -21,7 +21,7 @@ function Home() {
         </div>
       </div>
       <div className="lg:mt-14 lg:ml-5 lg:w-4/5 mt-10 w-full bg-blue-300">
-        <img src={img} alt="picture" />
+        <img src={img} alt="picture"/>
       </div>
     </div>
   );

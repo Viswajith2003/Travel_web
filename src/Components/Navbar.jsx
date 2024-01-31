@@ -2,19 +2,36 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import Button from "../Layouts/Button.jsx";
 import { AiOutlineMenu } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const setFixed = () => {
+    if (window.screenY >= 0) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
 
   const handleChange = () => {
     setMenu(!menu);
   };
 
   const backgroundColor = `bg-white`;
+  window.addEventListener("scroll", setFixed);
 
   return (
-    <div>
-      <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
+    <div className={nav ? "navbar fixed" : "Not fix"}>
+      {/* <div> */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white"
+      >
         <div className=" flex items-center">
           <Link to="/" spy={true} smooth={true} duration={500}>
             <h1 className=" font-semibold text-3xl cursor-pointer">TripMood</h1>
@@ -81,7 +98,7 @@ const Navbar = () => {
         >
           <AiOutlineMenu size={25} />
         </div>
-      </div>
+      </motion.div>
       <div
         className={` ${
           menu ? "translate-x-0" : "-translate-x-full"
