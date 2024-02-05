@@ -3,12 +3,14 @@ import img from "../assets/features.jpg";
 import { FaUserFriends } from "react-icons/fa";
 import { AiFillContacts } from "react-icons/ai";
 import { SiCashapp } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Features() {
   return (
     <div className="flex flex-col md:flex-row text-center justify-center items-center min-h-screen md:mx-32 mx-5 gap-14 mt-14">
       <div className="w-full">
-        <div className="space-y-6 lg:text-left">
+        <div className="space-y-6 lg:text-left" data-aos="fade-right">
           <h1 className="text-5xl font-bold mb-5">
             Get Ready to Explore, Get <br />
             Ready to Experience!
@@ -21,7 +23,7 @@ function Features() {
           </p>
         </div>
 
-        <div className="w-full lg:w-3/5 mt-10 lg:ml-14">
+        <div className="w-full lg:w-3/5 mt-10 lg:ml-14" data-aos="zoom-in" >
           <img
             className="rounded-xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)]"
             src={img}
@@ -35,7 +37,7 @@ function Features() {
           <div className="m-5 mr-8">
             <FaUserFriends className="w-8 h-8" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-3xl font-bold mb-3">Friendly Service</h2>
             <p className="text-[#898888]">
               We will provide excellent and friendly service for the sake of our
@@ -47,7 +49,7 @@ function Features() {
           <div className="m-5 mr-8">
             <AiFillContacts className="w-8 h-8" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-3xl font-bold mb-3">
               Unforgettable experience
             </h2>
@@ -61,7 +63,7 @@ function Features() {
           <div className="m-5 mr-8">
             <SiCashapp className="w-8 h-8" />
           </div>
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-3xl font-bold mb-3">Affordable prices</h2>
             <p className="text-[#898888]">
               We will provide excellent and Affordable prices for the sake of

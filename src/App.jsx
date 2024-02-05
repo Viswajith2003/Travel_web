@@ -6,11 +6,13 @@ import Destination from "./Components/Destination";
 import About from "./Components/About";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
+import AnimationDemo from "./Components/AnimationDemo";
 
 function App() {
   const [nav,setNav] =useState(false);
   return (
     <div>
+      {/* <AnimationDemo/> */}
       
       <Navbar/>
 

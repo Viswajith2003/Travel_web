@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../Layouts/Button";
 import img from "../assets/hero.jpg";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center ml-10">
-      <div className="flex flex-col text-center lg:text-start justify-center mt-20 mr-10 lg:mt-8 gap-8 lg:ml-20">
+      <div
+        className="flex flex-col text-center lg:text-start justify-center mt-20 mr-10 lg:mt-8 gap-8 lg:ml-20"
+        data-aos="fade-right"
+      >
         <h1 className="font-bold text-6xl lg:text-7xl leading-tight">
           Discover the Best Destinations
         </h1>
@@ -20,8 +29,9 @@ function Home() {
           </button>
         </div>
       </div>
-      <div className="lg:mt-14 lg:ml-5 lg:w-4/5 mt-10 w-full bg-blue-300">
-        <img src={img} alt="picture"/>
+      <div className="lg:mt-14 lg:ml-5 lg:w-4/5 mt-10 w-full bg-blue-300"
+      data-aos="fade-left">
+        <img src={img} alt="picture" />
       </div>
     </div>
   );
