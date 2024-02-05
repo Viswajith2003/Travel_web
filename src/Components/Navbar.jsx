@@ -24,12 +24,13 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed);
 
   return (
-    <div className={nav ? "navbar fixed" : "Not fix"}>
-      {/* <div> */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      //className={nav ? "navbar fixed" : "Not fix"}
+    >
+      <div
         className="flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white"
       >
         <div className=" flex items-center">
@@ -98,7 +99,7 @@ const Navbar = () => {
         >
           <AiOutlineMenu size={25} />
         </div>
-      </motion.div>
+      </div>
       <div
         className={` ${
           menu ? "translate-x-0" : "-translate-x-full"
@@ -157,7 +158,7 @@ const Navbar = () => {
           <Button title="Login" backgroundColor={backgroundColor} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
