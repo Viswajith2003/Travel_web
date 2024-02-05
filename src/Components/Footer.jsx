@@ -5,7 +5,7 @@ import { AiFillInstagram } from "react-icons/ai";
 function Footer() {
   return (
     <div className="mt-1 pt-6 pb-6  flex justify-between md:px-32 px-5 gap-10 bg-darkBackground text-white">
-      <div className="space-y-5">
+      <div className="space-y-5" data-aos="fade-down-right">
         <h1 className="text-3xl font-bold">TripMood</h1>
         <p className="font-semibold ">
           With TripMood you can experience <br /> new travel and the best
@@ -13,7 +13,7 @@ function Footer() {
           destination that we have to offer
         </p>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4" data-aos="fade-right">
         <h1 className="text-2xl font-bold">Destination</h1>
         <nav className=" flex flex-col gap-2">
           <a className=" hover:text-cyan-500  transition-all cursor-pointer">
@@ -30,7 +30,7 @@ function Footer() {
           </a>
         </nav>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-4" data-aos="fade-left">
         <h1 className="text-2xl font-bold">About</h1>
         <nav className=" flex flex-col gap-2">
           <a className="hover:text-cyan-500 transition-all cursor-pointer">
@@ -44,7 +44,7 @@ function Footer() {
           </a>
         </nav>
       </div>
-      <div className="flex flex-col items-center space-y-4">
+      <div className="flex flex-col items-center space-y-4" data-aos="fade-down-left">
         <h1 className="text-2xl font-bold">Follow Us</h1>
         <nav className=" flex flex-col gap-2">
           <a className="font-bold">

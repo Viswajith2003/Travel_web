@@ -3,8 +3,7 @@ import img from "../assets/features.jpg";
 import { FaUserFriends } from "react-icons/fa";
 import { AiFillContacts } from "react-icons/ai";
 import { SiCashapp } from "react-icons/si";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 function Features() {
   return (
@@ -34,7 +33,7 @@ function Features() {
 
       <div className=" w-full space-y-14 pt-2 ml-12">
         <div className=" space-y-4 flex flex-row items-center">
-          <div className="m-5 mr-8">
+          <div className="m-5 mr-8" data-AOS="flip-right">
             <FaUserFriends className="w-8 h-8" />
           </div>
           <div data-aos="fade-left">
@@ -46,7 +45,7 @@ function Features() {
           </div>
         </div>
         <div className=" space-y-3 flex flex-row items-center">
-          <div className="m-5 mr-8">
+          <div className="m-5 mr-8" data-AOS="flip-right">
             <AiFillContacts className="w-8 h-8" />
           </div>
           <div data-aos="fade-left">
@@ -60,7 +59,7 @@ function Features() {
           </div>
         </div>
         <div className=" space-y-3 flex flex-row items-center">
-          <div className="m-5 mr-8">
+          <div className="m-5 mr-8" data-AOS="flip-right">
             <SiCashapp className="w-8 h-8" />
           </div>
           <div data-aos="fade-left">

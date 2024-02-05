@@ -3,13 +3,12 @@ import Paris from "../assets/paris.jpg";
 import Dubai from "../assets/dubai.jpg";
 import Italy from "../assets/italy.jpg";
 import Dweep from "../assets/dweep.jpg";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 function Destination() {
   return (
     <div className="min-h-screen text-center flex flex-col justify-center items-center md:mx-32 mx-5">
-      <h1 className="text-5xl font-bold mr-9 lg:mt-0 mt-16">
+      <h1 className="text-5xl font-bold mr-9 lg:mt-0 mt-16" data-AOS="flip-right">
         Most Popular Destinations
       </h1>
       {/* cards */}

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typewriter from "typewriter-effect";
 
 function ScrollAnimation() {
   useEffect(() => {
@@ -9,7 +10,14 @@ function ScrollAnimation() {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-3xl font-bold mb-14">
-        React Scroll_Animation
+        <Typewriter
+          options={{
+            autoStart: true,
+            loop: true,
+            delay: 50,
+            strings: ["React Scroll_Animation"],
+          }}
+        />
       </h1>
       <h2 className="text-center text-2xl">Fade</h2>
       <div

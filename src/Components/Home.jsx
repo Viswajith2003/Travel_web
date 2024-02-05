@@ -23,7 +23,7 @@ function Home() {
           With TripMood you can experience new travel and the best tourist
           destinations that we have to offer.
         </p>
-        <div className="lg:mt-8 text-center items-center">
+        <div className="lg:mt-8 text-center items-center" data-AOS="flip-right">
           <button className="bg-yellow-300 hover:bg-cyan-300 w-48 h-12 text-xl rounded-full font-bold">
             Destinations
           </button>
