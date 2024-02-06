@@ -44,17 +44,20 @@ function Footer() {
           </a>
         </nav>
       </div>
-      <div className="flex flex-col items-center space-y-4" data-aos="fade-down-left">
+      <div
+        className="flex flex-col items-center space-y-4"
+        data-aos="fade-down-left"
+      >
         <h1 className="text-2xl font-bold hover:text-pink-400">Follow Us</h1>
         <nav className=" flex flex-col gap-2">
           <a className="font-bold">
-            <FaFacebook className="w-5 h-5" />
+            <FaFacebook className="w-5 h-5 box-content px-3 py-2 rounded-lg shadow-lg shadow-white/50 cursor-pointer hover:shadow-inner hover:shadow-black/30 duration-300 hover:text-cyan-300" />
           </a>
           <a className="font-bold">
-            <FaYoutube className="w-5 h-5" />
+            <FaYoutube className="w-5 h-5 box-content px-3 py-2 rounded-lg shadow-lg shadow-white/50 cursor-pointer hover:shadow-inner hover:shadow-black/30 duration-300 hover:text-cyan-300" />
           </a>
           <a className="font-bold">
-            <AiFillInstagram className="w-5 h-5" />
+            <AiFillInstagram className="w-5 h-5 box-content px-3 py-2 rounded-lg shadow-lg shadow-white/50 cursor-pointer hover:shadow-inner hover:shadow-black/30 duration-300 hover:text-cyan-300" />
           </a>
         </nav>
       </div>
