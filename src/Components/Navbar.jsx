@@ -24,15 +24,13 @@ const Navbar = () => {
   window.addEventListener("scroll", setFixed);
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      //className={nav ? "navbar fixed" : "Not fix"}
+      className="fixed w-full z-40"
     >
-      <div
-        className="flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white"
-      >
+      <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
         <div className=" flex items-center">
           <Link to="/" spy={true} smooth={true} duration={500}>
             <h1 className=" font-semibold text-3xl cursor-pointer">TripMood</h1>

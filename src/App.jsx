@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Features from "./Components/Features";
@@ -9,12 +9,12 @@ import Footer from "./Components/Footer";
 import AnimationDemo from "./Components/AnimationDemo";
 
 function App() {
-  const [nav,setNav] =useState(false);
+  const [nav, setNav] = useState(false);
   return (
     <div>
       {/* <AnimationDemo/> */}
-      
-      <Navbar/>
+
+      <Navbar />
 
       <main style={{ minHeight: "100vh" }}>
         <div id="home">
